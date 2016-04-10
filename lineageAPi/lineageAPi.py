@@ -76,8 +76,7 @@ def new_user(username, password):
     user.hash_password(password)
     db.session.add(user)
     db.session.commit()
-    return (jsonify({'username': user.username}), 201,
-            {'Location': url_for('get_user', id=user.id, _external=True)})
+    return user
 
 
 @app.route('/api/users/<int:id>')
