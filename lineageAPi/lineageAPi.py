@@ -13,12 +13,10 @@ from itsdangerous import (TimedJSONWebSignatureSerializer
 from lineage.connect import *
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy dog'
+app.config['SECRET_KEY'] = 'the quickkkkkk brooooooown fox jumps over the laaaazy dooooog'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-app.run(host='0.0.0.0')
-
 
 # extensions
 db = SQLAlchemy(app)
