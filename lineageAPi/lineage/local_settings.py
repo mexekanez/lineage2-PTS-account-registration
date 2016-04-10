@@ -1,0 +1,3 @@
+MSSQL_HOST = ""
+MSSQL_USER = ""
+MSSQL_PASSWORD = ""
