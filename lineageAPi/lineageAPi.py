@@ -65,7 +65,7 @@ def verify_password(username_or_token, password):
             print "wrong password"
             return False
     g.user = user
-    print username_or_token, password
+    print "credentials " + username_or_token, password
     return True
 
 
