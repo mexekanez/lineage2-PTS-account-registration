@@ -66,9 +66,8 @@ def verify_password(username_or_token, password):
 
 
 # @app.route('/api/users', methods=['POST'])
-def new_user():
-    username = request.json.get('username')
-    password = request.json.get('password')
+def new_user(username, password):
+
     if username is None or password is None:
         abort(400)    # missing arguments
     if User.query.filter_by(username=username).first() is not None:

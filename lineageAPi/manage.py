@@ -9,7 +9,7 @@ def builddb():
     print "SQL lite db was created"
 
 @manager.command
-def createsperuser(user, password):
+def createsuperuser(user, password):
     user =  new_user(user,password)
     print "Token: " + user.generate_auth_token()
 
