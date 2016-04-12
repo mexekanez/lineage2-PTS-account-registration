@@ -8,7 +8,7 @@ It cheks if account exists (user_auth, ssn, user_account and user_info tables)
 
 
 
-###It's  just small REST API service for account creation.
+###It's  just small REST API service for accounts.
 
 ###It does account creation with encrypt option.
 
@@ -45,9 +45,13 @@ Request for game account creation is the next:
 
 Where r:r login and password or you can use token. 
 If accaount was created in response you will get 
+
 	$ status: good
+
 or 
-	$status : error
+
+	$ status : error
+
 with fields where we have issue like : "Account already exists"
 
 You can extend this thing for donation or use it like it is.
