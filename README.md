@@ -1,21 +1,18 @@
 # lineage2_pts_reg
 ### Lineage 2 PTS (works with MSSQL server) server account creating
+###It's  just small REST API service for accounts.
 
 REST API service with user/token authentication.
 
 It cheks if account exists (user_auth, ssn, user_account and user_info tables)
 
-
-
-
-###It's  just small REST API service for accounts.
-
 ###It does account creation with encrypt option.
 
 If you want to run on Windows server you need: Python 2.7.5 and pymssql for this service - all this on root folder. 
 
-When you have done with python instalation next step will be to install additional modules for serverce like flask and etc.
+When you have done with python instalation next step will be to install additional modules for serverce like flask and etc...
 use 
+	
 	$ pip install -r requirements.txt
 
 Also this application has local sqlLite storage for users.
